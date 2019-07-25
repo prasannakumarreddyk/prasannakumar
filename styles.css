@@ -1,0 +1,319 @@
+@import '~font-awesome/css/font-awesome.css';
+@import '~@swimlane/ngx-datatable/release/index.css';
+@import '~@swimlane/ngx-datatable/release/themes/material.css';
+@import '~@swimlane/ngx-datatable/release/assets/icons.css';
+
+html, body {
+
+    height: 100%;
+    min-height: 100%;
+    font-family: "Open Sans";
+}
+
+html {
+
+  background: #0054a4;
+}
+
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+
+.list-group-condensed .list-group-item {
+  padding: 0.3em 0.6em;
+}
+
+.vertical-center-light {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Raleway;
+  color: #aaa;
+}
+
+.badge-bold {
+  font-family: "Open Sans Condensed";
+  text-transform: uppercase;
+  padding: 0.5em 0.8em;
+  border-radius: 0;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: Open Sans Condensed !important;
+  font-weight: bold !important;
+  text-transform: uppercase;
+}
+
+.btn.btn-lighten {
+  background: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.8);
+  border-radius: 0;
+  font-size: 0.9rem;
+}
+
+.btn.btn-darken {
+  background: rgba(0, 0, 0, 0.15);
+  color: rgb(255, 255, 255);
+  border-radius: 0;
+  font-size: 0.9rem;
+}
+
+.btn.btn-details {
+  background: #333; /* rgb(48, 205, 177); */
+  color: rgb(255, 255, 255);
+  border-radius: 0;
+  font-size: 0.9rem;
+}
+
+.btn.btn-icon {
+  line-height: 1.3;
+}
+
+
+
+.feature-content-section {
+  padding: 10px;
+}
+
+table.table {
+  background: white;
+  font-size: 0.9rem;
+  font-family: "Open Sans";
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.table thead th {
+  font-family: "Open Sans Condensed";
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.table th,
+.table td {
+  padding: .4rem .8rem;
+  color: #333;
+}
+
+.table td {
+  border-top: 0;
+}
+
+.table thead th {
+  border-bottom-width: 1px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #F3F3F3;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #eee;
+}
+
+/** Global Fixes */
+
+.ngx-datatable .datatable-footer .datatable-pager .pager li a {
+  box-shadow: none;
+}
+
+.ngx-datatable .datatable-checkbox input[type='checkbox']:before {
+    border-color: #CCC;
+}
+
+
+.ngx-datatable.material .datatable-footer {
+  font-size: 1rem !important;
+}
+
+/* ng-content introduces a div */
+
+.mis-feature-content > div[feature-main],
+.mis-feature-detail > div[feature-detail],
+.mis-feature-detail > div[feature-detail] > div { 
+  height: 100%;
+}
+
+dl dt {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: open sans condensed;
+    margin: 0 0 0.25rem 0;
+    font-size: 0.8rem;
+}
+
+dl dd {
+    background: rgba(0,0,0,0.04);
+    padding: 0.25rem 0.5rem;
+}
+
+dl a { 
+}
+
+
+tag-input {
+  flex: 1;
+  padding-right: 0.1em;
+}
+
+.ng2-tags-container tag {
+    /* text-transform: uppercase; */
+    
+    border: 1px dashed #d4d4d4;
+    background: #fff !important;
+    color: #000!important;
+    font-family: "Open Sans Condensed" !important;
+    font-size: 16px !important;
+    line-height: 26px !important;
+    letter-spacing: 0 !important;
+    order: 999;
+    height: auto !important;
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.ng2-tags-container tag-input-form {
+  flex: 1;
+}
+
+.ng2-tag-input {
+  border: 0 !important;
+}
+
+.ng2-tag-input__text-input {
+  display: inline-block !important;
+  width: 100% !important;
+  font-family: "Open Sans" !important;
+}
+
+.tag-input-btn {
+    color: #AAA !important;
+    padding: 0 !important;
+    margin: 0 0.4em 0 0;
+}
+
+.tag-input-btn:hover {
+  color: #666 !important;
+}
+
+.tag-input-separator {
+  border-right: 1px dashed #DDD;
+  width: 1px;
+  line-height: 26px;
+  margin: 0.5em 0.3em 0.5em 0;
+}
+
+.ng2-tag-input delete-icon path {
+    fill: #444 !important;
+}
+
+.ng2-tag-input svg {
+    vertical-align: middle !important;
+    height: 12px !important;
+}
+
+/* scrollbars */
+
+.scrollbar1::-webkit-scrollbar-track
+{
+  background-color: #EEE;
+}
+
+.scrollbar1::-webkit-scrollbar
+{
+  width: 6px;
+  background-color: #EEE;
+}
+
+.scrollbar1::-webkit-scrollbar-thumb
+{
+  background-color: #aaa;
+}
+
+/*
+.datatable-body::-webkit-scrollbar-track
+{
+  background-color: #EEE;
+}
+
+.datatable-body::-webkit-scrollbar
+{
+  width: 6px;
+  background-color: #EEE;
+}
+
+.datatable-body::-webkit-scrollbar-thumb
+{
+  background-color: #aaa;
+}
+*/
+
+
+.general-section {
+  font-family: Raleway;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.general-section > .heading {
+  font-family: Open Sans Condensed;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding-bottom: 0.2rem;
+}
+
+.general-section > .links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+.form-group > label {
+  font-family: "Open Sans Condensed";
+  font-size: 1.2em;
+}      
+
+.md-form,
+.form-group {
+  margin-bottom: 0.5rem;
+}
+
+
+/* replacing bootstrap styles */
+.hidden {
+  display: none;
+}
+
+/* some global form styles */
+
+.required {
+  color: red;
+}
+quill-editor.ng-invalid.invalid {
+  display:block;
+  border: 1px solid #dc3545
+}
+
+quill-editor .ql-container {
+  background-color: #fff;
+}
+
+multiselect.ng-invalid.invalid .btn-outline-primary {  
+  border: 1px solid #dc3545 !important;
+}
+
+.custom-invalid-feedback {
+  width: 100%;
+  margin-top: .25rem;
+  font-size: 80%;
+  color: #dc3545;
+}
